@@ -14,14 +14,15 @@ import java.util.List;
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResumeDTO {
-
     private PersonalInfoDTO personalInfo;
-    private String summary;
     private List<EducationDTO> education;
     private List<ExperienceDTO> experience;
     private List<ProjectDTO> projects;
     private List<String> skills;
     private List<CertificationDTO> certifications;
+
+    private String summary;
+
     private List<String> languages;
     private List<String> extracurricularActivities;
 
